@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Poišči zaposlenega po imenu.">
+		<meta name="author" content="Steven Osterc">
+		<title>Worker - Poišči</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+		<!-- BOOTSTRAP -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+		<!--<link rel="stylesheet" href="css/styles.css">-->
+		<script src="javascript/main.js"></script>
+		<!--[if lt IE 9]>
+ 		 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<div class="container-fluid">
+			<div class="col-xs-2"> <!-- logo strani -->
+				<a href="home.html"><img id="headLogo" src="images/logo.png" alt="Logo"/></a>
+			</div>
+			<br/>
+			<div class="col-xs-8"></div> <!-- luknja vmes -->
+			<div class="col-xs-2"> <!-- povezava na osebni profil -->
+				<a href="profile.html" class="btn" role="button">Ime Priimek <img src="images/profileMini.jpg" alt="profile picture" /></a>
+			</div>
+			<br/>
+			<br/>
+			<br/>
+			<div class ="col-xs-2"> <!-- levi stolpec -->
+				<div class="list-group">
+						<a href="profile.html" class="list-group-item">
+							<img src="images/profileMini.jpg" alt="profile picture" />
+						Moj profil
+						</a>
+					<a href="searchUser.html" class="list-group-item">Poišči uporabnika ...</a>
+					<a href="about.html" class="list-group-item">O Workerju ...</a>
+					<a href="logout.html" class="list-group-item">Izpiši me</a>
+				</div>
+			</div>
+			<div class="col-xs-6"> <!-- osrednji stolpec -->
+				<h2 class="text-center">Poišči uporabnika</h2>
+				<br/>
+				<div class="input-group">
+      				<input type="text" class="form-control" placeholder="Poišči uporabnika...">
+      				<span class="input-group-btn">
+       					 <button class="btn btn-default" type="button" onclick="searchUsers();">Išči</button>
+      				</span>
+    			</div>
+    			<br/><br/>
+				<table id="table">
+					<thead>
+						<tr>
+							<td><strong>Ime</strong></td>
+							<td><strong>Delovno mesto</strong></td>
+							<td><strong>Nazadnje viden ...</strong></td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><a href="">Janez Novak</a></td>
+							<td>Prodajalec</td>
+							<td>22.11.2015</td>
+						</tr>
+						<tr>
+							<td><a href="">janez_novak12</a></td>
+							<td>Direktor</td>
+							<td>20.11.2015</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="col-xs-2"></div> <!-- desni stolpec -->
+		</div>
+	</body>
+</html>
