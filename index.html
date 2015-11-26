@@ -1,7 +1,97 @@
 <!DOCTYPE html>
+
 <html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Povezi se s svojimi sodelavci in si krajšaj čas.">
+		<meta name="author" content="Steven Osterc">
+		<title>Worker</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+		<!-- BOOTSTRAP -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+		<!--<link rel="stylesheet" href="css/styles.css">-->
+		<script src="javascript/main.js"></script>
+		<!--[if lt IE 9]>
+ 		 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+
 	<body>
-		<h1>Hello World</h1>
-		<p>I'm hosted with GitHub Pages.</p>
+		<div class="container-fluid">
+			<div class="col-xs-2"> <!-- logo strani -->
+				<a href="index.html"><img id="headLogo" src="images/logo.png" alt="Logo"/></a>
+			</div>
+			<br/>
+			<div class="col-xs-8"></div> <!-- luknja vmes -->
+			<div class="col-xs-2"> <!-- povezava na osebni profil -->
+				<a href="profile.html" class="btn" role="button">Ime Priimek <img src="images/profileMini.jpg" alt="profile picture" /></a>
+			</div>
+			<br/>
+			<br/>
+			<br/>
+			<div class="col-xs-2"> <!-- levi stolpec -->
+				<div class="list-group">
+						<a href="profile.html" class="list-group-item">
+							<img src="images/profileMini.jpg" alt="profile picture" />
+						Moj profil
+						</a>
+					<a href="searchUser.html" class="list-group-item">Poišči uporabnika ...</a>
+					<a href="about.html" class="list-group-item">O Workerju ...</a>
+					<a href="logout.html" class="list-group-item">Izpiši me</a>
+				</div>
+			</div>
+			<div class="col-xs-6"> <!-- osrednji stolpec -->
+				<form class="form-horizontal">
+					<h3>Objavi ...</h3>
+					<div class="form-group">
+						<textarea class="form-control" placeholder="Objavi kako misel"></textarea>
+					</div>
+					<button class="btn btn-primary pull-right" type="button">Objavi</button>
+					<ul class="list-inline">
+						<li>
+							<a href=""><i class="glyphicon glyphicon-camera"></i></a>
+							<!-- dopolni kodo, da bo ob kliku na ikono lahko se izbrala dolocena fotografija -->
+						</li>
+						<li>
+							<a href=""><i class="glyphicon glyphicon-play-circle"></i></a>
+							<!-- dopolni kodo, da bo ob kliku na ikono lahko se izbrala dolocena vecpredstavnostna povezava -->
+						</li>
+					</ul>
+				</form>
+				<br/><br/>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<a href="Profile.html" class="btn" role="button"><img src="images/profileMini.jpg" alt="profile picture" /> Ime Priimek</a>
+					</div>
+					<div class="panel-body">
+						Obvestilo o sestanku dne 22.01.2016 v konferenčni sobi, kjer se bomo pogovarjali o prihodnosti podjetja in zvišanju plač. Po sestanku sledi pogostitev. Ne zamujajte, to obvestilo velja kot okrožnica.
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<a href="Profile.html" class="btn" role="button"><img src="images/profileMini.jpg" alt="profile picture" /> Sef Podjetja</a>
+					</div>
+					<div class="panel-body">
+						<h4>To sliko sem našel na spletu, kako zanimivo!</h4>
+						<img src="images/postPhoto.jpg" alt="Slika - post 2"/><br/>
+						
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<a href="Profile.html" class="btn" role="button"><img src="images/profileMini.jpg" alt="profile picture" /> janez_novak12</a>
+					</div>
+					<div class="panel-body">
+						Če kdo ne ve, kaj bi delal cel dan v službi, he he he .....
+						<iframe width="420" height="315" src="https://www.youtube.com/embed/qnOnDsl5vC0?rel=0" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-2"></div> <!-- desni stolpec -->
+		</div>
 	</body>
 </html>
